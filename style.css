@@ -1,0 +1,518 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+}
+@font-face {
+    font-family: roboto;
+    src: url(../robot-font/roboto/Roboto-Regular.ttf);
+}
+body{
+    font-family: roboto;
+}
+.container{
+    width: 1240px;
+    margin: 0 auto;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.text-center{
+    text-align: center;
+}
+
+/* Header Css */
+.header{
+    background-color: #fff;
+padding: 10px 0px;}
+.header-logo img{
+    width: 84px;
+}
+
+.header-menu ul li{
+    display: inline-block;
+padding: 5px 10px;}
+.header-menu ul li a{display: inline-block;text-decoration: none;font-size: 21px;color: black;padding: 5px 15px;}
+
+/* Banner Css */
+.banner {
+    background-image: url(./image/img/kobu-agency-IWLR561-Yb-MY-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 300px 0px;
+    position: relative;
+    z-index: 999;
+}
+.banner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(56, 54, 54, .4);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.banner-content h4{color: white;margin-bottom: 10px;}
+.banner-content h1{color: white;font-size: 40px;margin-bottom: 10px;}
+
+button.btn-1{
+    
+padding: 10px 42px;background-color: white;border-radius: 10px;}
+button.btn-2{
+
+padding: 10px 42px;background-color: white;border-radius: 10px;}
+button.btn-1:hover{
+    background-color: rgb(62, 206, 62);
+    transition: .6s;
+}
+button.btn-2:hover{
+    background-color: rgb(63, 226, 63);
+    transition: .6s;
+}
+button.btn-1 a {
+    text-decoration: none;
+    font-size: 21px;
+    color: black;
+}
+button.btn-2 a {
+    text-decoration: none;
+    font-size: 21px;
+    color: black;
+}
+
+
+/* Pricing table CSS */
+
+.price-box{
+    width: 28%;
+    margin-right: 50px;
+    background-color: #fff;
+    margin-left: 15px;
+   
+    
+   
+}
+.price-box .table-1{
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(19, 18, 18, .4);
+    transition: .7s;
+}
+.price-box .table-1 h4{
+    padding: 16px 10px;
+    font-weight: bold;
+}
+.price-box .table-1 h1{ 
+    padding: 10px 10px;
+    background-color: rgb(235, 231, 231);
+    width: 300px;
+    margin: auto;
+    font-weight: 900;
+    font-family: roboto;
+}
+.price-box .table-1 h5{
+    padding: 10px 10px;
+}
+.price-box .table-1 p{
+    padding: 10px 10px;
+    width: 200px;
+    margin: auto 7px;
+}
+
+.price-box .item-list{
+    margin-top: 10px;
+}
+.price-table-section{
+    background-color: #ddd;
+    padding: 50px 0px;
+}
+.price-heading{
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.price-box:hover .table-1{
+    background-color: orange;
+}
+.price-box:hover .btn-3{
+    background-color: orange;
+}
+.price-heading h1{
+    padding: 20px 0px;
+    
+}
+
+.table-content-box{
+    text-align: left;
+}
+.item-list ul li{
+    list-style-position: inside;
+    padding: 14px 25px;
+    list-style: none;
+    font-family: roboto;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.item-list ul li::before{
+    content: "\f00c";
+    font-size: 30px;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: rgb(199, 183, 94);
+    margin-right: 10px;
+}
+
+.item-list ul li:nth-child(4)::before{
+    content: "\f00d";
+    font-size: 30px;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: rgb(199, 183, 94);
+    margin-right: 20px;
+}
+.item-list ul li:nth-child(5)::before{
+    content: "\f00d";
+    font-size: 30px;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: rgb(199, 183, 94); red;
+    margin-right: 20px;
+}
+.item-list ul li:nth-child(6)::before{
+    content: "\f00d";
+    font-size: 30px;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: rgb(199, 183, 94);
+    margin-right: 20px;
+}
+.table-btn{
+    text-align: center;
+    margin-top: 20px;
+    padding: 30px 0px ;
+   
+}
+.table-btn .btn-3{
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border: 2px solid #ddd;
+    transition: .6s;
+  
+}
+.table-btn .btn-3 a{
+    text-decoration: none;
+    display: block;
+    padding: 15px 25px;
+    font-weight: 600;
+    font-size: 18px;
+    color: red;
+    
+}
+/* Team CSS */
+.team-section{
+    background-color: #fff;
+    padding: 30px 0px;
+}
+.team-section .heading{
+    text-align: center;
+}
+.team-section .heading h1{}
+
+.team-img{
+   padding: 50px 0px; 
+   text-align: center;
+}
+
+.team-img .img-1{
+    width: 23%;
+    margin-left: 10px;
+    border: 4px double gold;
+}
+
+.team-img .img-2{
+    width: 23%;
+    margin-left: 10px;
+    border: 4px double gold;
+}
+
+.team-img .img-3{
+    width: 23%;
+    margin-left: 10px;
+    border: 4px double gold;
+}
+
+.team-img .img-4{
+    width: 23%;
+    border: 4px double gold;
+    margin-left: 10px;
+}
+
+.team-img h3{
+    text-align: left;
+    padding: 20px 10px;
+}
+
+.team-img h5{
+    color: gray;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+/* Subscribe Css */
+
+.subscribe-section{
+    background-color: #ddd;
+    padding: 100px 0px;
+}
+
+.subscribe-section .subs-content{
+    text-align: center;
+}
+
+.subscribe-section .subs-content p{
+    padding: 10px 0px;
+}
+
+.subscribe-section .subs-content  h1{
+    padding: 23px 0px;
+}
+
+.subscribe-section .subs-form{
+    text-align: center;
+}
+
+.subscribe-section .subs-form .email{
+    width: 327px;
+    height: 35px;
+    border: 2px solid gold;
+    border-radius: 10px;
+    padding-left: 11px;
+    /* border: none; */}
+
+.subscribe-section .subs-form #submit {
+    margin-top: 25px;
+    border: none;
+}
+.subscribe-section .subs-form #submit a{
+    background: #AA972C;
+    padding: 10px 68px;
+   transition: .6s;
+    border-radius: 7px;
+    color: white;
+    font-size: 16px;
+    
+text-decoration: none;
+border: 2px solid transparent;
+
+}
+
+.subscribe-section .subs-form #submit a:hover{
+    background-color: #fff;
+    border: 2px solid rgb(188, 219, 75);
+    color: red;
+    
+}
+
+/* Choose Section */
+.choose-content-head{
+    text-align: center;
+    padding: 15px 0px;
+}
+.choose-img{
+    width: 40%;
+}
+.choose-img img{
+    max-width: 100%;
+}
+
+.choose-section .choose-content{
+    width: 55%;
+    
+}
+.choose-section .choose-content h3{
+    padding: 16px 0px;
+    
+}
+.choose-section .choose-content p{
+    padding: 16px 0px; 
+    
+}
+/* About Section CSS */
+.about-section{
+    background-color: #ddd;
+    padding: 50px 0px;
+}
+
+.about-section .about-heading p{
+    padding: 10px 0px;
+    text-align: center;
+}
+.about-section .about-heading h1{
+    padding: 10px 0px;
+    text-align: center;
+}
+.about-wrapper .about-content p{
+    padding-left: 15px;
+}
+.about-wrapper .about-content{
+    position: relative;
+    z-index: 3;
+    padding: 20px 0px;
+}
+.about-wrapper .about-content p::before {
+    content: "\f10d";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 800;
+    font-size: 70px;
+    color: rgb(175, 117, 117, .3);
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    z-index: -1;
+}
+
+.about-main-box{
+    margin-top: 40px;
+  
+}
+.about-wrapper{
+    width: 31%;
+    border: 1px solid black;
+    margin: 10px;
+}
+.about-wrapper .about-content{
+    background-color: white;
+    padding: 20px 10px;
+    position: relative;
+}
+.about-wrapper .about-content::after{
+    content: "";
+    position: absolute;
+    bottom: -19px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 20px 20px 0 20px;
+border-color: #fff transparent transparent transparent;
+}
+
+
+.about-user {
+    background-color: #ddd;
+    /* margin-top: 90px; */
+    padding: 100px 0px;
+}
+.about-user .user-img{
+    width: 55%;
+    padding-bottom: 20px;
+}
+.about-user .user-img img{
+    height: 100px;
+    margin-top: -70px;
+    margin-left: 80px;
+    border: 8px solid #AA972C;
+}
+.about-user .user-name{
+    width: 22%;
+    margin-top: -55px;
+    margin-left: -10px;
+}
+/* Contact Section CSS */
+.contact-section{
+    background-color: #fff;
+    padding: 80px 0px 30px 0px;
+}
+.contact-section .contact-heading h3{
+    text-align: center;
+    padding: 10px 0px 5px 0;
+}
+.contact-section .contact-heading p{
+    text-align: center;
+    
+    padding: 30px 0px;
+    width: 800px;
+    margin: auto;
+}
+
+.contact-section .form .contact-form #email{
+    width: 100% ;
+    height: 50px;
+    border-radius: 6px;
+    border: 3px solid gold;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.contact-section .form .contact-form #name{
+    width: 40%;
+    border-radius: 6px;
+      box-sizing: border-box;
+    padding: 10px;
+    border: 3px solid gold;
+    height: 50px;
+}
+.dib-2{
+    text-align: right;
+}
+.contact-section .form .contact-form #phone{
+    width: 45%;
+    margin: -57px 0px 0px 40px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 3px solid gold;
+    height: 50px;  
+}
+
+.contact-section .form .contact-form textarea{
+    width: 100% ;
+    height: 150px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 3px solid gold;
+}
+.button-4{
+    text-align: center;
+    margin-top: 10px;
+}
+.btn-5{
+   padding: 15px 70px;
+   border-radius: 8px;
+   background-color: orange;
+   border: none;
+   transition: .9s;
+   border: 1px solid transparent;
+}
+.btn-5 a{
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+.btn-5:hover{
+    background-color: #fff;
+    border: 1px solid orange;
+    cursor: pointer;
+
+}
+/* Footer css */
+footer p{
+    text-align: center;
+    font-size: 17px;
+    padding: 10px 0px;
+}
